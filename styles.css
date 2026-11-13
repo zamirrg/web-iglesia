@@ -24,7 +24,7 @@ p { line-height: 1.55; }
 
 .site-header { align-items: center; background: rgba(245, 242, 238, .88); backdrop-filter: blur(16px); display: flex; justify-content: space-between; left: 0; padding: 1.25rem 4.5vw; position: absolute; top: 0; width: 100%; z-index: 20; }
 .brand { align-items: center; display: inline-flex; gap: .7rem; font-family: 'Manrope', sans-serif; font-size: .85rem; font-weight: 800; letter-spacing: .16em; }
-.brand-logo { background: white; border-radius: 50%; height: 2.7rem; object-fit: contain; padding: .18rem; width: 2.7rem; }
+.brand-logo { height: 2.7rem; object-fit: contain; width: 2.7rem; }
 .brand-mark { align-items: center; background: var(--ink); border-radius: 50%; color: var(--paper); display: inline-flex; font-size: .95rem; height: 2rem; justify-content: center; letter-spacing: 0; width: 2rem; }
 .desktop-nav { display: flex; gap: 2.2rem; margin-left: auto; margin-right: 3rem; }
 .desktop-nav a { font-size: .85rem; font-weight: 700; }
@@ -147,7 +147,7 @@ p { line-height: 1.55; }
 .social-links { display: flex; gap: 2rem; justify-content: center; }
 .social-links a { border-bottom: 1px solid var(--ink); font-size: .8rem; font-weight: 700; padding-bottom: .3rem; }
 .site-footer { align-items: center; background: var(--ink); color: var(--paper); display: flex; justify-content: space-between; padding: 2rem 8vw; }
-.site-footer .brand-logo { background: var(--paper); }
+.site-footer .brand-logo { height: 2.7rem; width: 2.7rem; }
 .site-footer p { color: #aaa6b0; font-size: .7rem; }
 
 @media (max-width: 800px) {
