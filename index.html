@@ -14,12 +14,14 @@
 <body>
   <header class="site-header">
     <a class="brand" href="#inicio" aria-label="Iglesia Ebenezer, inicio">
-      <span class="brand-mark">E</span>
+      <img class="brand-logo" src="assets/logo-asambleas.png" alt="Logo de Asambleas de Dios" />
       <span class="brand-name">EBENEZER</span>
     </a>
     <nav class="desktop-nav" aria-label="Navegación principal">
       <a href="#somos">Quiénes somos</a>
       <a href="#horarios">Reúnete</a>
+      <a href="#ministerios">Ministerios</a>
+      <a href="#jovenes">Jóvenes</a>
       <a href="#recursos">Recursos</a>
       <a href="#contacto">Contacto</a>
     </nav>
@@ -103,6 +105,51 @@
       </div>
     </section>
 
+    <section class="ministries section" id="ministerios">
+      <div class="section-label">03 / MINISTERIOS</div>
+      <div class="ministries-header">
+        <div>
+          <p class="eyebrow accent">SIRVIENDO JUNTOS</p>
+          <h2>Cada don<br>tiene un lugar.</h2>
+        </div>
+        <p>En nuestros ministerios encontramos espacios para servir, aprender y acompañar a otros con los dones que Dios nos ha dado.</p>
+      </div>
+      <div class="ministry-grid">
+        <article class="ministry-card ministry-card-main" data-aos="fade-up">
+          <span class="ministry-symbol">✦</span>
+          <div>
+            <p class="eyebrow">ALABANZA Y ADORACIÓN</p>
+            <h3>Guiamos a la iglesia a encontrarse con Dios.</h3>
+            <p>Servimos con música, creatividad y un corazón dispuesto para cada celebración.</p>
+          </div>
+        </article>
+        <article class="ministry-card" data-aos="fade-up" data-aos-delay="100">
+          <span class="ministry-symbol">◎</span>
+          <div>
+            <p class="eyebrow">ESCUELA BÍBLICA</p>
+            <h3>Aprendemos la Palabra.</h3>
+            <p>Formación para niños, adolescentes y adultos que desean crecer en la fe.</p>
+          </div>
+        </article>
+        <article class="ministry-card" data-aos="fade-up" data-aos-delay="200">
+          <span class="ministry-symbol">⌁</span>
+          <div>
+            <p class="eyebrow">FAMILIAS</p>
+            <h3>Construimos hogares firmes.</h3>
+            <p>Conversaciones y acompañamiento para vivir el evangelio en casa.</p>
+          </div>
+        </article>
+        <article class="ministry-card ministry-card-dark" data-aos="fade-up" data-aos-delay="300">
+          <span class="ministry-symbol">↗</span>
+          <div>
+            <p class="eyebrow">SERVICIO Y MISIÓN</p>
+            <h3>Somos iglesia en nuestra ciudad.</h3>
+            <p>Salimos de nuestras paredes para servir a Ayacucho con amor práctico.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section class="location section" id="visitanos">
       <div class="location-card" data-aos="zoom-in">
         <div class="location-info">
@@ -129,6 +176,36 @@
         <div class="play-icon">▶</div>
         <p>Pronto podrás acompañarnos en nuestras celebraciones en línea.</p>
         <a class="text-link light-link" href="https://www.facebook.com/IglesiaEbenEzerAyacuchoLadp" target="_blank" rel="noopener">Síguenos en Facebook <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="youth section" id="jovenes">
+      <div class="section-label">04 / JÓVENES EBENEZER</div>
+      <div class="youth-layout">
+        <div class="youth-heading" data-aos="fade-right">
+          <p class="eyebrow">UNA GENERACIÓN CON PROPÓSITO</p>
+          <h2>Creemos en lo que Dios está haciendo en los jóvenes.</h2>
+          <p>Un espacio para conversar sin máscaras, adorar con libertad y descubrir juntos cómo seguir a Jesús.</p>
+          <a class="button button-light" href="https://www.instagram.com/jovenescristianosdeebenezer/" target="_blank" rel="noopener">Conoce Jóvenes Ebenezer <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="youth-content" data-aos="fade-left">
+          <div class="youth-feature">
+            <span class="content-badge">SÁBADOS · 6:00 PM</span>
+            <h3>Plenarias<br>que nos mueven.</h3>
+            <p>Reuniones, conversaciones y palabras que aterrizan la fe en la vida real.</p>
+          </div>
+          <div class="youth-links">
+            <a href="https://www.instagram.com/jovenescristianosdeebenezer/" target="_blank" rel="noopener">
+              <span><small>01 / GRABACIONES</small><strong>Revive nuestras plenarias</strong></span><b>↗</b>
+            </a>
+            <a href="https://www.tiktok.com/@ebenezer.ayacucho" target="_blank" rel="noopener">
+              <span><small>02 / PALABRAS SUTILES</small><strong>Una pausa para tu semana</strong></span><b>↗</b>
+            </a>
+            <a href="https://www.facebook.com/IglesiaEbenEzerAyacuchoLadp" target="_blank" rel="noopener">
+              <span><small>03 / COMUNIDAD</small><strong>Conecta con nosotros</strong></span><b>↗</b>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -185,14 +262,21 @@
   </main>
 
   <footer class="site-footer">
-    <a class="brand" href="#inicio"><span class="brand-mark">E</span><span class="brand-name">EBENEZER</span></a>
+    <a class="brand" href="#inicio"><img class="brand-logo" src="assets/logo-asambleas.png" alt="Logo de Asambleas de Dios" /><span class="brand-name">EBENEZER</span></a>
     <p>Loza Los Licenciados · Puente Enace · Ayacucho</p>
     <p>© 2026 Iglesia Ebenezer</p>
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
   <script>
     AOS.init({ once: true, offset: 70, duration: 800, easing: 'ease-out-cubic' });
+    const lenis = new Lenis({ duration: 1.2, smoothWheel: true, syncTouch: true });
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.desktop-nav');
     menuToggle.addEventListener('click', () => {

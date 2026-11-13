@@ -12,6 +12,8 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+html.lenis, html.lenis body { height: auto; }
+html.lenis.lenis-smooth { scroll-behavior: auto !important; }
 body { background: var(--paper); color: var(--ink); font-family: 'DM Sans', sans-serif; overflow-x: hidden; }
 a { color: inherit; text-decoration: none; }
 h1, h2, h3 { font-family: 'Manrope', sans-serif; letter-spacing: -.055em; line-height: .98; }
@@ -22,6 +24,7 @@ p { line-height: 1.55; }
 
 .site-header { align-items: center; background: rgba(245, 242, 238, .88); backdrop-filter: blur(16px); display: flex; justify-content: space-between; left: 0; padding: 1.25rem 4.5vw; position: absolute; top: 0; width: 100%; z-index: 20; }
 .brand { align-items: center; display: inline-flex; gap: .7rem; font-family: 'Manrope', sans-serif; font-size: .85rem; font-weight: 800; letter-spacing: .16em; }
+.brand-logo { background: white; border-radius: 50%; height: 2.7rem; object-fit: contain; padding: .18rem; width: 2.7rem; }
 .brand-mark { align-items: center; background: var(--ink); border-radius: 50%; color: var(--paper); display: inline-flex; font-size: .95rem; height: 2rem; justify-content: center; letter-spacing: 0; width: 2rem; }
 .desktop-nav { display: flex; gap: 2.2rem; margin-left: auto; margin-right: 3rem; }
 .desktop-nav a { font-size: .85rem; font-weight: 700; }
@@ -75,6 +78,18 @@ p { line-height: 1.55; }
 .schedule-row span, .schedule-row strong { font-family: 'Manrope', sans-serif; font-size: 1.35rem; }
 .schedule-row small { align-self: center; color: #aaa6b0; }
 
+.ministries { background: var(--paper); }
+.ministries-header { display: grid; gap: 8vw; grid-template-columns: 1.25fr .75fr; margin: 7rem 0 4rem; }
+.ministries-header > p { align-self: end; color: var(--muted); font-size: 1.05rem; max-width: 350px; }
+.ministry-grid { display: grid; gap: 1rem; grid-template-columns: 1.15fr .85fr .85fr; }
+.ministry-card { background: var(--cream); display: flex; flex-direction: column; justify-content: space-between; min-height: 330px; padding: 2rem; }
+.ministry-card-main { background: var(--purple); grid-row: span 2; min-height: 675px; }
+.ministry-card-dark { background: var(--ink); color: var(--paper); }
+.ministry-symbol { font-size: 2.3rem; }
+.ministry-card h3 { font-size: clamp(1.7rem, 2.7vw, 2.7rem); margin-bottom: 1.2rem; }
+.ministry-card > div > p:last-child { color: var(--muted); max-width: 300px; }
+.ministry-card-dark > div > p:last-child { color: #aaa6b0; }
+
 .location { background: var(--cream); }
 .location-card { display: grid; grid-template-columns: .8fr 1.2fr; min-height: 540px; }
 .location-info { display: flex; flex-direction: column; justify-content: center; padding: 4rem; }
@@ -92,6 +107,21 @@ p { line-height: 1.55; }
 .live-placeholder { align-items: center; aspect-ratio: 16 / 6; background: linear-gradient(120deg, #393244, #1d1b25); display: flex; flex-direction: column; justify-content: center; text-align: center; }
 .live-placeholder p { color: #b7b2c0; margin: 1.4rem 0; }
 .play-icon { align-items: center; background: var(--yellow); border-radius: 50%; color: var(--ink); display: flex; font-size: .8rem; height: 4rem; justify-content: center; padding-left: .2rem; width: 4rem; }
+
+.youth { background: var(--orange); }
+.youth-layout { display: grid; gap: 8vw; grid-template-columns: .9fr 1.1fr; margin-top: 7rem; }
+.youth-heading h2 { font-size: clamp(2.7rem, 4.8vw, 5rem); margin-bottom: 1.8rem; }
+.youth-heading > p:not(.eyebrow) { color: rgba(23, 21, 28, .68); margin-bottom: 2rem; max-width: 380px; }
+.youth-content { align-self: end; }
+.youth-feature { background: var(--ink); color: var(--paper); min-height: 300px; padding: 2.5rem; }
+.content-badge { border: 1px solid rgba(245, 242, 238, .35); border-radius: 50px; display: inline-block; font-size: .65rem; font-weight: 700; letter-spacing: .12em; padding: .55rem .8rem; }
+.youth-feature h3 { color: var(--yellow); font-size: clamp(2.3rem, 4vw, 4.4rem); margin: 2.8rem 0 1.2rem; }
+.youth-feature p { color: #b7b2c0; max-width: 330px; }
+.youth-links a { align-items: center; border-bottom: 1px solid rgba(23, 21, 28, .3); display: flex; justify-content: space-between; padding: 1.25rem 0; transition: padding .25s; }
+.youth-links a:hover { padding-left: .5rem; padding-right: .5rem; }
+.youth-links small { display: block; font-size: .6rem; font-weight: 700; letter-spacing: .12em; margin-bottom: .35rem; }
+.youth-links strong { font-family: 'Manrope', sans-serif; font-size: 1rem; }
+.youth-links b { font-size: 1.2rem; }
 
 .resources { background: var(--paper); }
 .resources-header { margin-bottom: 4rem; }
@@ -117,7 +147,7 @@ p { line-height: 1.55; }
 .social-links { display: flex; gap: 2rem; justify-content: center; }
 .social-links a { border-bottom: 1px solid var(--ink); font-size: .8rem; font-weight: 700; padding-bottom: .3rem; }
 .site-footer { align-items: center; background: var(--ink); color: var(--paper); display: flex; justify-content: space-between; padding: 2rem 8vw; }
-.site-footer .brand-mark { background: var(--paper); color: var(--ink); }
+.site-footer .brand-logo { background: var(--paper); }
 .site-footer p { color: #aaa6b0; font-size: .7rem; }
 
 @media (max-width: 800px) {
@@ -135,14 +165,20 @@ p { line-height: 1.55; }
   .scroll-hint { display: none; }
   .section { padding: 5rem 7vw; }
   .welcome-layout, .gather-layout, .resources-header, .giving-layout { display: block; margin: 4rem 0; }
+  .ministries-header { display: block; margin: 4rem 0; }
+  .ministries-header > p { margin-top: 2rem; }
   .welcome-copy, .resources-header > p, .giving-layout > div:last-child { margin-top: 2rem; }
   .values-grid, .resource-grid { grid-template-columns: 1fr; }
   .value-card, .resource-card { min-height: 320px; }
+  .ministry-grid { grid-template-columns: 1fr; }
+  .ministry-card-main { grid-row: auto; min-height: 380px; }
   .location-card { display: block; }
   .location-info { min-height: 420px; padding: 3rem; }
   .map-frame { height: 330px; min-height: 0; }
   .live-header { align-items: start; flex-direction: column; gap: 2rem; }
   .live-placeholder { aspect-ratio: 1 / 1; padding: 2rem; }
+  .youth-layout { display: block; margin-top: 4rem; }
+  .youth-content { margin-top: 3rem; }
   .schedule-row { grid-template-columns: 1fr 1fr; }
   .schedule-row small { grid-column: 2; grid-row: 1; }
   .site-footer { align-items: flex-start; flex-direction: column; gap: 1rem; }
