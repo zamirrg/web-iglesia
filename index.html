@@ -3,72 +3,207 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nombre de la Iglesia</title>
+  <meta name="description" content="Iglesia Ebenezer en Ayacucho. Un lugar para conocer a Jesús, crecer en comunidad y servir." />
+  <title>Iglesia Ebenezer | Ayacucho</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">IGLESIA</div>
-    <nav>
-      <a href="#envivo">En Vivo</a>
-      <a href="#horarios">Horarios</a>
-      <a href="#ubicacion">Ubicación</a>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Iglesia Ebenezer, inicio">
+      <span class="brand-mark">E</span>
+      <span class="brand-name">EBENEZER</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <a href="#somos">Quiénes somos</a>
+      <a href="#horarios">Reúnete</a>
+      <a href="#recursos">Recursos</a>
+      <a href="#contacto">Contacto</a>
     </nav>
+    <a class="header-button" href="#visitanos">Visítanos <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span>
+    </button>
   </header>
-  <section class="hero">
-    <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
-      <span class="tag">BIENVENIDO A CASA</span>
-      <h1>UN LUGAR PARA CONECTAR CON DIOS Y CRECER EN COMUNIDAD</h1>
-      <div class="hero-buttons">
-        <a href="#envivo" class="btn btn-primary">Ver en vivo</a>
-        <a href="#ubicacion" class="btn btn-outline">Cómo llegar</a>
-      </div>
-    </div>
-  </section>
-  <section id="envivo" class="section dark-section">
-    <div class="container" data-aos="fade-up">
-      <span class="tag">TRANSMISIÓN</span>
-      <h2>ÚNETE A NUESTRO CULTO EN VIVO</h2>
-      <p class="subtitle">Domingos 9:00 AM y 11:00 AM • Miércoles 7:00 PM</p>
-      <div class="video-wrapper" data-aos="zoom-in-up" data-aos-delay="150">
-        <iframe src="https://www.youtube.com/embed/live_stream?channel=TU_ID_DE_CANAL" title="Transmisión en vivo" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div>
-  </section>
-  <section id="ubicacion" class="section light-section">
-    <div class="container grid-2">
-      <div class="info-box" data-aos="fade-right">
-        <span class="tag dark-tag">VISÍTANOS</span>
-        <h2 id="horarios">HORARIOS Y DIRECCIÓN</h2>
-        <p>Nos encantaría recibirte este domingo. Contamos con espacios preparados para niños y jóvenes.</p>
-        <div class="schedule-item">
-          <strong>Domingos</strong>
-          <span>9:00 AM y 11:00 AM — Reunión General</span>
-        </div>
-        <div class="schedule-item">
-          <strong>Miércoles</strong>
-          <span>7:00 PM — Noche de Oración y Palabra</span>
-        </div>
-        <div class="schedule-item">
-          <strong>Dirección</strong>
-          <span>Av. Principal 123 (Referencia cerca al parque central)</span>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-glow"></div>
+      <div class="hero-content" data-aos="fade-up">
+        <p class="eyebrow">IGLESIA EBENEZER · AYACUCHO</p>
+        <h1>Un lugar para <em>encontrar</em> a Dios y caminar juntos.</h1>
+        <p class="hero-copy">Somos una familia que aprende a vivir el evangelio con alegría, propósito y esperanza en cada etapa de la vida.</p>
+        <div class="hero-actions">
+          <a class="button button-light" href="#horarios">Planifica tu visita <span aria-hidden="true">↗</span></a>
+          <a class="text-link light-link" href="#en-vivo">Ver en vivo <span aria-hidden="true">→</span></a>
         </div>
       </div>
-      <div class="map-wrapper" data-aos="fade-left" data-aos-delay="150">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.0!2d-74.223!3d-13.163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDA5JzQ2LjgiUyA3NMKwMTMnMjIuOCJX!5e0!3m2!1ses!2spe!4v1600000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="hero-note">
+        <span class="pulse"></span>
+        <span>Una iglesia para toda la familia</span>
       </div>
-    </div>
-  </section>
+      <div class="scroll-hint" aria-hidden="true"><span></span> Desliza para conocer más</div>
+    </section>
+
+    <section class="welcome section" id="somos">
+      <div class="section-label">01 / NUESTRA CASA</div>
+      <div class="welcome-layout">
+        <div data-aos="fade-up">
+          <p class="eyebrow accent">BIENVENIDO A CASA</p>
+          <h2>Creemos que nadie debería caminar solo.</h2>
+        </div>
+        <div class="welcome-copy" data-aos="fade-up" data-aos-delay="100">
+          <p>En Ebenezer hacemos espacio para que cada persona conozca a Jesús, encuentre una comunidad y descubra cómo puede ser parte de lo que Dios está haciendo en Ayacucho.</p>
+          <a class="text-link dark-link" href="#contacto">Conoce nuestra historia <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="values-grid">
+        <article class="value-card value-card-image" data-aos="fade-up">
+          <span class="card-number">01</span>
+          <div>
+            <p class="eyebrow">VIVIMOS</p>
+            <h3>Con fe<br>y propósito.</h3>
+          </div>
+        </article>
+        <article class="value-card" data-aos="fade-up" data-aos-delay="100">
+          <span class="card-number">02</span>
+          <div>
+            <p class="eyebrow accent">CRECEMOS</p>
+            <h3>En comunidad<br>y verdad.</h3>
+            <p>Una casa donde las relaciones importan y cada historia tiene un lugar.</p>
+          </div>
+        </article>
+        <article class="value-card value-card-yellow" data-aos="fade-up" data-aos-delay="200">
+          <span class="card-number">03</span>
+          <div>
+            <p class="eyebrow">SERVIMOS</p>
+            <h3>Con amor<br>a nuestra ciudad.</h3>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="gather section" id="horarios">
+      <div class="section-label">02 / REÚNETE CON NOSOTROS</div>
+      <div class="gather-layout">
+        <div class="gather-heading" data-aos="fade-right">
+          <p class="eyebrow accent">ENCUENTRA TU MOMENTO</p>
+          <h2>Hay un lugar<br>para ti.</h2>
+          <p>Nos reunimos durante la semana para adorar, aprender y orar juntos.</p>
+        </div>
+        <div class="schedule-list" data-aos="fade-left">
+          <div class="schedule-row"><span>Martes</span><strong>6:30 PM</strong><small>Reunión de oración</small></div>
+          <div class="schedule-row"><span>Jueves</span><strong>6:30 PM</strong><small>Estudio bíblico</small></div>
+          <div class="schedule-row"><span>Sábado</span><strong>6:00 PM</strong><small>Encuentro de jóvenes</small></div>
+          <div class="schedule-row"><span>Domingo</span><strong>9:30 AM</strong><small>Celebración familiar</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="location section" id="visitanos">
+      <div class="location-card" data-aos="zoom-in">
+        <div class="location-info">
+          <p class="eyebrow accent">NOS ENCONTRAMOS EN</p>
+          <h2>Ayacucho,<br>Huamanga.</h2>
+          <p>Loza Los Licenciados<br>Puente Enace</p>
+          <a class="button button-dark" href="https://www.google.com/maps/place/Iglesia+Eben+Ezer-+Las+Asambleas+de+Dios+del+Peru/@-13.144741,-74.2279881,19z" target="_blank" rel="noopener">Cómo llegar <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="map-frame">
+          <iframe title="Mapa de Iglesia Ebenezer en Ayacucho" src="https://www.google.com/maps?q=-13.144741,-74.2279881&z=17&output=embed" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="live section" id="en-vivo">
+      <div class="live-header" data-aos="fade-up">
+        <div>
+          <p class="eyebrow">EN VIVO DESDE EBENEZER</p>
+          <h2>Conéctate desde<br>donde estés.</h2>
+        </div>
+        <span class="live-status"><span class="pulse"></span> Próximamente</span>
+      </div>
+      <div class="live-placeholder" data-aos="fade-up" data-aos-delay="100">
+        <div class="play-icon">▶</div>
+        <p>Pronto podrás acompañarnos en nuestras celebraciones en línea.</p>
+        <a class="text-link light-link" href="https://www.facebook.com/IglesiaEbenEzerAyacuchoLadp" target="_blank" rel="noopener">Síguenos en Facebook <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="resources section" id="recursos">
+      <div class="section-label">03 / RECURSOS</div>
+      <div class="resources-header">
+        <div>
+          <p class="eyebrow accent">PARA TU CAMINO</p>
+          <h2>Contenido que<br>te acompaña.</h2>
+        </div>
+        <p>Ideas, conversaciones y momentos para seguir creciendo durante toda la semana.</p>
+      </div>
+      <div class="resource-grid">
+        <a class="resource-card resource-card-purple" href="https://www.instagram.com/jovenescristianosdeebenezer/" target="_blank" rel="noopener" data-aos="fade-up">
+          <span class="resource-icon">✦</span>
+          <div><p class="eyebrow">JÓVENES</p><h3>Vive tu fe<br>con otros.</h3><span class="text-link dark-link">Conoce más ↗</span></div>
+        </a>
+        <a class="resource-card resource-card-orange" href="https://www.tiktok.com/@ebenezer.ayacucho" target="_blank" rel="noopener" data-aos="fade-up" data-aos-delay="100">
+          <span class="resource-icon">◒</span>
+          <div><p class="eyebrow">MENSAJES</p><h3>Una palabra<br>para hoy.</h3><span class="text-link dark-link">Ver contenido ↗</span></div>
+        </a>
+        <a class="resource-card resource-card-blue" href="https://www.facebook.com/IglesiaEbenEzerAyacuchoLadp" target="_blank" rel="noopener" data-aos="fade-up" data-aos-delay="200">
+          <span class="resource-icon">↗</span>
+          <div><p class="eyebrow">COMUNIDAD</p><h3>Lo que pasa<br>en casa.</h3><span class="text-link dark-link">Síguenos ↗</span></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="giving section">
+      <div class="giving-layout" data-aos="fade-up">
+        <div>
+          <p class="eyebrow">GENEROSIDAD</p>
+          <h2>Damos porque<br>hemos recibido.</h2>
+        </div>
+        <div>
+          <p>Creemos que la generosidad es una respuesta de gratitud y una forma de bendecir a nuestra comunidad. Pronto encontrarás aquí nuestras opciones para dar.</p>
+          <a class="button button-outline" href="#contacto">Quiero saber más <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter section" id="contacto">
+      <div class="newsletter-inner" data-aos="fade-up">
+        <p class="eyebrow accent">MANTENTE CERCA</p>
+        <h2>Lo mejor está<br>por venir.</h2>
+        <p>Escríbenos por nuestras redes y recibe noticias de todo lo que sucede en Ebenezer.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/IglesiaEbenEzerAyacuchoLadp" target="_blank" rel="noopener">Facebook ↗</a>
+          <a href="https://www.instagram.com/jovenescristianosdeebenezer/" target="_blank" rel="noopener">Instagram ↗</a>
+          <a href="https://www.tiktok.com/@ebenezer.ayacucho" target="_blank" rel="noopener">TikTok ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#inicio"><span class="brand-mark">E</span><span class="brand-name">EBENEZER</span></a>
+    <p>Loza Los Licenciados · Puente Enace · Ayacucho</p>
+    <p>© 2026 Iglesia Ebenezer</p>
+  </footer>
+
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
   <script>
-    AOS.init({ once: false, offset: 80, duration: 800, easing: 'ease-out-cubic' });
-    const lenis = new Lenis({ duration: 1.2, smoothWheel: true });
-    function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
-    requestAnimationFrame(raf);
+    AOS.init({ once: true, offset: 70, duration: 800, easing: 'ease-out-cubic' });
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.desktop-nav');
+    menuToggle.addEventListener('click', () => {
+      const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', String(!isOpen));
+      nav.classList.toggle('is-open', !isOpen);
+    });
+    nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+      menuToggle.setAttribute('aria-expanded', 'false');
+      nav.classList.remove('is-open');
+    }));
   </script>
 </body>
 </html>
