@@ -112,7 +112,6 @@ p { line-height: 1.55; }
 .button-dark:hover { background: transparent; color: var(--ink); }
 .map-frame { min-height: 260px; }
 .map-frame iframe { border: 0; filter: grayscale(1) contrast(.9); height: 100%; width: 100%; }
-.location-photo { background: linear-gradient(135deg, rgba(20, 19, 26, .08), rgba(20, 19, 26, .35)), url('assets/fundo-las-lomas.jpg') center/cover; min-height: 260px; }
 
 .live { background: #25222e; color: var(--paper); }
 .live-header { align-items: end; display: flex; justify-content: space-between; margin-bottom: 4rem; }
