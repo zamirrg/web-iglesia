@@ -47,8 +47,10 @@ backToTop.addEventListener('click', () => {
 });
 updateBackToTop();
 
+const touchInteraction = window.matchMedia('(hover: none), (pointer: coarse)');
 document.querySelectorAll('.belief-toggle').forEach((toggle) => {
   toggle.addEventListener('click', () => {
+    if (!touchInteraction.matches) return;
     const article = toggle.closest('article');
     const isOpen = article.classList.toggle('is-open');
     toggle.setAttribute('aria-expanded', String(isOpen));
