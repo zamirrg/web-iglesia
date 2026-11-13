@@ -38,7 +38,7 @@ p { line-height: 1.55; }
 .hero { background: linear-gradient(90deg, rgba(245,207,84,.92) 0%, rgba(245,207,84,.78) 42%, rgba(245,207,84,.28) 100%), url('assets/ebenezer-grupo.jpg') center 42% / cover no-repeat; min-height: 100vh; overflow: hidden; padding: 17vh 8vw 6rem; position: relative; }
 .hero-content { position: relative; z-index: 1; }
 .hero h1 em { font-style: normal; position: relative; }
-.hero h1 em::after { background: var(--ink); bottom: -.08em; content: ''; height: .07em; left: 0; position: absolute; transform: rotate(-2deg); width: 100%; }
+.hero h1 em::after, .page-hero h1 em::after { display: none; }
 .hero-copy { font-size: 1.05rem; margin: 3.5rem 0 2.5rem; max-width: 430px; }
 .eyebrow { font-size: .68rem; font-weight: 700; letter-spacing: .18em; margin-bottom: 1.1rem; }
 .accent { color: #aa7a12; }
@@ -187,7 +187,7 @@ p { line-height: 1.55; }
 .footer-column strong { color: var(--paper); font-size: .8rem; margin-bottom: .35rem; }
 .footer-column a { color: #aaa6b0; font-size: .8rem; transition: color .25s, transform .25s; }
 .footer-column a:hover { color: var(--paper); transform: translateX(3px); }
-.footer-bottom { align-items: center; border-top: 1px solid rgba(245,242,238,.14); display: flex; grid-column: 1 / -1; justify-content: space-between; margin-top: 2rem; padding-top: 1.25rem; }
+.footer-bottom { align-items: center; display: flex; grid-column: 1 / -1; justify-content: space-between; margin-top: 1rem; padding-top: .5rem; }
 .communications-credit { align-items: center; display: flex; gap: .75rem; }
 .communications-credit img { filter: drop-shadow(0 0 .45rem rgba(255,255,255,.12)); height: 2.6rem; object-fit: contain; width: 4.7rem; }
 .communications-credit p { color: #aaa6b0; font-size: .7rem; }
@@ -207,7 +207,6 @@ p { line-height: 1.55; }
 .page-hero-inner { position: relative; z-index: 1; }
 .page-hero h1 { font-size: clamp(3.5rem, 8vw, 8rem); max-width: 850px; }
 .page-hero h1 em { font-style: normal; position: relative; }
-.page-hero h1 em::after { background: var(--ink); bottom: -.08em; content: ''; height: .07em; left: 0; position: absolute; transform: rotate(-2deg); width: 100%; }
 .page-hero-inner > p:last-child { font-size: 1.05rem; margin-top: 4.25rem; max-width: 430px; }
 .content-section { background: var(--paper); }
 .story-intro { max-width: 760px; }
@@ -388,7 +387,7 @@ p { line-height: 1.55; }
 }
 
 @media (max-width: 800px) {
-  .inner-page main, .inner-page .site-footer { max-width: 100vw; width: 100vw; }
+  .inner-page main, .inner-page .site-footer { max-width: 100%; width: 100%; }
   [data-aos] { transform: none !important; }
   h1 { font-size: clamp(3rem, 14vw, 5rem); }
   .site-header { padding: 1rem 6vw; }
@@ -465,5 +464,5 @@ p { line-height: 1.55; }
   .footer-column { border-top: 1px solid rgba(245,242,238,.14); padding-top: 1.25rem; }
   .footer-column strong { align-items: center; display: flex; justify-content: space-between; }
   .footer-column a { font-size: .9rem; }
-  .footer-bottom { align-items: flex-start; flex-direction: column; gap: 1.25rem; margin-left: -7vw; margin-right: -7vw; margin-top: 0; padding-left: 7vw; padding-right: 7vw; width: calc(100% + 14vw); }
+  .footer-bottom { align-items: flex-start; flex-direction: column; gap: 1.25rem; margin-top: 0; padding-top: 0; width: 100%; }
 }
