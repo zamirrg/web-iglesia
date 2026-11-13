@@ -33,12 +33,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-  <link rel="stylesheet" href="styles.css?v=hero-line-up" />
+  <link rel="stylesheet" href="styles.css?v=updates-a11y-v1" />
 </head>
 <body>
+<a class="skip-link" href="#main-content">Saltar al contenido</a>
   <header class="site-header">
     <a class="brand" href="#inicio" aria-label="Iglesia Ebenezer, inicio">
-      <img class="brand-logo" src="assets/logo-asambleas.png" alt="Logo de Asambleas de Dios" />
+      <img loading="eager" decoding="async" class="brand-logo" src="assets/logo-asambleas.png" alt="Logo de Asambleas de Dios" />
       <span class="brand-name">EBENEZER</span>
     </a>
     <nav class="desktop-nav" aria-label="Navegación principal">
@@ -56,7 +57,7 @@
     </button>
   </header>
 
-  <main>
+  <main id="main-content">
     <section class="hero" id="inicio">
       <div class="hero-content" data-aos="fade-up">
         <p class="eyebrow">IGLESIA EBENEZER · AYACUCHO</p>
@@ -212,8 +213,39 @@
       </div>
     </section>
 
+    <section class="updates section" id="actualidad">
+      <div class="section-label">05 / ESTA SEMANA</div>
+      <div class="updates-header">
+        <div>
+          <p class="eyebrow accent">MANTENTE AL DÍA</p>
+          <h2>Lo que está pasando<br>en Ebenezer.</h2>
+        </div>
+        <p>Encuentra una forma sencilla de conectar, servir y crecer junto a nuestra familia durante la semana.</p>
+      </div>
+      <div class="updates-grid">
+        <article class="update-card" data-aos="fade-up">
+          <p class="eyebrow">MARTES · 6:30 PM</p>
+          <h3>Oramos juntos.</h3>
+          <p>Un espacio para buscar a Dios, presentar nuestras necesidades y sostenernos como comunidad.</p>
+          <a class="text-link dark-link" href="#horarios">Ver horarios <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="update-card" data-aos="fade-up" data-aos-delay="100">
+          <p class="eyebrow">SÁBADO · 6:00 PM</p>
+          <h3>Una generación con propósito.</h3>
+          <p>Jóvenes y adolescentes se reúnen para crecer en la fe, construir amistades y servir.</p>
+          <a class="text-link dark-link" href="jovenes/">Conoce Jóvenes Ebenezer <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="update-card" data-aos="fade-up" data-aos-delay="200">
+          <p class="eyebrow">DICIEMBRE · AEV</p>
+          <h3>Una celebración que conecta.</h3>
+          <p>El evento anual AEV vuelve en diciembre para reunir a la iglesia alrededor de la Palabra y la comunidad.</p>
+          <a class="text-link dark-link" href="aev/">Conoce AEV <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section>
+
     <section class="live section" id="en-vivo">
-      <div class="section-label">05 / EN VIVO</div>
+      <div class="section-label">06 / EN VIVO</div>
       <div class="live-header" data-aos="fade-up">
         <div>
           <p class="eyebrow">EN VIVO DESDE EBENEZER</p>
@@ -229,7 +261,7 @@
     </section>
 
     <section class="youth section" id="jovenes">
-      <div class="section-label">06 / JÓVENES EBENEZER</div>
+      <div class="section-label">07 / JÓVENES EBENEZER</div>
       <div class="youth-layout">
         <div class="youth-heading" data-aos="fade-right">
           <p class="eyebrow">UNA GENERACIÓN CON PROPÓSITO</p>
@@ -260,7 +292,7 @@
     </section>
 
     <section class="resources section" id="recursos">
-      <div class="section-label">07 / RECURSOS</div>
+      <div class="section-label">08 / RECURSOS</div>
       <div class="resources-header">
         <div>
           <p class="eyebrow accent">PARA TU CAMINO</p>
@@ -291,7 +323,7 @@
             <p class="eyebrow">RECURSO PARA TU CAMINO</p>
             <h2>Lee, escucha y descubre la Palabra.</h2>
           </div>
-          <img class="bible-app-icon" src="assets/biblia-youversion.png" alt="Icono Holy Bible de YouVersion" />
+          <img loading="lazy" decoding="async" class="bible-app-icon" src="assets/biblia-youversion.png" alt="Icono Holy Bible de YouVersion" />
         </div>
         <div>
           <p>Descarga la app oficial de YouVersion y disfruta la Biblia Reina-Valera 1960, con planes, lecturas y versiones en audio para acompañar tus plenarias y tu tiempo con Dios.</p>
@@ -329,15 +361,15 @@
   </main>
 
   <footer class="site-footer">
-    <div class="footer-intro"><a class="brand" href="#inicio"><img class="brand-logo" src="assets/logo-asambleas.png" alt="Logo de Asambleas de Dios" /><span class="brand-name">EBENEZER</span></a><p>Iglesia de Avivamiento y Evangelismo</p><p>Ayacucho, Perú</p></div>
+    <div class="footer-intro"><a class="brand" href="#inicio"><img loading="eager" decoding="async" class="brand-logo" src="assets/logo-asambleas.png" alt="Logo de Asambleas de Dios" /><span class="brand-name">EBENEZER</span></a><p>Iglesia de Avivamiento y Evangelismo</p><p>Ayacucho, Perú</p></div>
     <div class="footer-column"><strong>Explora</strong><a href="#inicio">Inicio</a><a href="#horarios">Horarios</a><a href="#visitanos">Sedes</a></div>
     <div class="footer-column"><strong>Conócenos</strong><a href="nosotros/">Nosotros</a><a href="ministerios/">Ministerios</a><a href="jovenes/">Jóvenes</a></div>
     <div class="footer-column"><strong>Recursos</strong><a href="creencias/">Creencias</a><a href="aev/">AEV</a><a href="#contacto">Contacto</a></div>
-    <div class="footer-bottom"><p>© 2026 Iglesia Ebenezer</p><div class="communications-credit" data-credit="zamirrg"><img src="assets/ministerio-comunicaciones.png" alt="Ministerio de Comunicaciones" /><p>Diseño y desarrollo<br><strong>Ministerio de Comunicaciones</strong></p></div></div>
+    <div class="footer-bottom"><p>© 2026 Iglesia Ebenezer</p><div class="communications-credit" data-credit="zamirrg"><img loading="lazy" decoding="async" src="assets/ministerio-comunicaciones.png" alt="Ministerio de Comunicaciones" /><p>Diseño y desarrollo<br><strong>Ministerio de Comunicaciones</strong></p></div></div>
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
-  <script src="scripts.js?v=hero-line-up"></script>
+  <script src="scripts.js?v=updates-a11y-v1"></script>
 </body>
 </html>

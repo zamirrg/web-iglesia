@@ -19,6 +19,8 @@ if (window.Lenis) {
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.desktop-nav');
 if (menuToggle && nav) {
+  nav.id = 'primary-navigation';
+  menuToggle.setAttribute('aria-controls', nav.id);
   menuToggle.addEventListener('click', () => {
     const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
     menuToggle.setAttribute('aria-expanded', String(!isOpen));
@@ -28,6 +30,12 @@ if (menuToggle && nav) {
     menuToggle.setAttribute('aria-expanded', 'false');
     nav.classList.remove('is-open');
   }));
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      menuToggle.setAttribute('aria-expanded', 'false');
+      nav.classList.remove('is-open');
+    }
+  });
 }
 
 const backToTop = document.createElement('button');

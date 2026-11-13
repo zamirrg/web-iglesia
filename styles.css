@@ -16,6 +16,10 @@ html.lenis, html.lenis body { height: auto; }
 html.lenis.lenis-smooth { scroll-behavior: auto !important; }
 body { background: var(--paper); color: var(--ink); font-family: 'DM Sans', sans-serif; overflow-x: hidden; }
 a { color: inherit; text-decoration: none; }
+img { height: auto; max-width: 100%; }
+a:focus-visible, button:focus-visible { outline: 3px solid #aa7a12; outline-offset: .25rem; }
+.skip-link { background: var(--ink); color: var(--paper); left: 1rem; padding: .75rem 1rem; position: fixed; top: -5rem; z-index: 100; }
+.skip-link:focus { top: 1rem; }
 h1, h2, h3 { font-family: 'Manrope', sans-serif; letter-spacing: -.055em; line-height: .98; }
 h1 { font-size: clamp(3.4rem, 8vw, 8.4rem); max-width: 930px; }
 h2 { font-size: clamp(2.8rem, 5vw, 5.8rem); }
@@ -85,6 +89,16 @@ p { line-height: 1.55; }
 .schedule-row span, .schedule-row strong { font-family: 'Manrope', sans-serif; font-size: 1.35rem; }
 .schedule-row strong { color: var(--yellow); }
 .schedule-row small { align-self: center; color: #aaa6b0; font-size: .78rem; line-height: 1.4; }
+.updates { background: var(--cream); }
+.updates-header { align-items: end; display: flex; justify-content: space-between; margin: 5rem 0 3rem; }
+.updates-header > p { color: var(--muted); max-width: 330px; }
+.updates-grid { display: grid; gap: 1rem; grid-template-columns: repeat(3, 1fr); }
+.update-card { background: var(--paper); border-top: 3px solid var(--ink); display: flex; flex-direction: column; min-height: 270px; padding: 1.75rem; }
+.update-card:nth-child(2) { border-top-color: #aa7a12; }
+.update-card:nth-child(3) { border-top-color: #668da1; }
+.update-card h3 { font-size: clamp(1.5rem, 2.5vw, 2.3rem); margin: 1.5rem 0 1rem; }
+.update-card p { color: var(--muted); font-size: .95rem; max-width: 300px; }
+.update-card .text-link { margin-top: auto; width: fit-content; }
 
 .ministries { background: var(--paper); }
 .ministries-header { display: grid; gap: 8vw; grid-template-columns: 1.25fr .75fr; margin: 7rem 0 4rem; }
@@ -433,6 +447,9 @@ p { line-height: 1.55; }
   .map-placeholder { min-height: 240px; padding: 2rem; }
   .map-placeholder strong { max-width: 100%; }
   .live-header { align-items: start; flex-direction: column; gap: 2rem; }
+  .updates-header { align-items: start; flex-direction: column; gap: 2rem; margin: 4rem 0 2.5rem; }
+  .updates-grid { grid-template-columns: 1fr; }
+  .update-card { min-height: 240px; }
   .live-placeholder { aspect-ratio: 1 / 1; padding: 2rem; }
   .youth-layout { display: block; margin-top: 4rem; }
   .youth-content { margin-top: 3rem; }
