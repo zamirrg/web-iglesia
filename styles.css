@@ -142,6 +142,8 @@ p { line-height: 1.55; }
 .bible-resource { background: #dcecf0; }
 .bible-resource-inner { display: grid; gap: 8vw; grid-template-columns: 1.1fr .9fr; }
 .bible-resource h2 { font-size: clamp(2.7rem, 5vw, 5.2rem); max-width: 650px; }
+.bible-heading { align-items: flex-end; display: flex; gap: 3rem; justify-content: space-between; }
+.bible-heading .bible-app-icon { flex: 0 0 9rem; height: 9rem; margin: 0 1rem 1rem 0; width: 9rem; }
 .bible-resource-inner > div:last-child { max-width: 440px; }
 .bible-app-icon { border-radius: 22%; box-shadow: 0 18px 30px rgba(23, 21, 28, .2); display: block; height: 5rem; margin-bottom: 1.5rem; width: 5rem; }
 .bible-resource-inner > div:last-child > p:first-child { color: var(--muted); font-size: 1.05rem; margin-bottom: 1.5rem; }
@@ -376,6 +378,8 @@ p { line-height: 1.55; }
   .section { padding: 5rem 7vw; }
   .welcome-layout, .gather-layout, .resources-header, .giving-layout { display: block; margin: 4rem 0; }
   .bible-resource-inner { display: block; }
+  .bible-heading { display: block; }
+  .bible-heading .bible-app-icon { margin: 2rem 0; }
   .bible-resource-inner > div:last-child { margin-top: 2rem; }
   .ministries-header { display: block; margin: 4rem 0; }
   .ministries-header > p { margin-top: 2rem; }
