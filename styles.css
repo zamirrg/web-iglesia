@@ -243,11 +243,13 @@ p { line-height: 1.55; }
 .youth-detail-card-dark h3 { color: var(--yellow); }
 .youth-detail-card-orange { background: var(--orange); }
 .youth-detail-card-purple { background: var(--purple); }
-.aev-feature { background: #101923; color: var(--paper); display: grid; grid-template-columns: .95fr 1.05fr; margin-top: 6rem; overflow: hidden; }
-.aev-art { min-height: 560px; }
-.aev-art img { display: block; height: 100%; object-fit: cover; width: 100%; }
-.aev-copy { padding: 4rem; }
-.aev-copy h2 { color: #ff6a4f; font-size: clamp(5rem, 11vw, 10rem); line-height: .8; margin: 2rem 0; }
+.aev-feature { background: linear-gradient(125deg, #0b111c, #172c3c 62%, #242033); color: var(--paper); display: grid; grid-template-columns: 1.05fr .95fr; margin-top: 6rem; overflow: hidden; }
+.aev-art { align-items: center; background: #090f18; display: flex; justify-content: center; min-height: 510px; padding: 2.5rem; }
+.aev-art img { display: block; height: auto; max-height: 100%; max-width: 100%; object-fit: contain; width: auto; }
+.aev-copy { padding: 4.5rem 4rem; }
+.aev-pill { background: #ff6a4f; border-radius: 50px; color: #101923; display: inline-block; font-size: .62rem; font-weight: 800; letter-spacing: .12em; margin-top: .5rem; padding: .6rem .8rem; }
+.aev-copy h2 { color: #ff6a4f; font-size: clamp(5rem, 11vw, 10rem); line-height: .8; margin: 2rem 0 .8rem; }
+.aev-meaning { color: #fff0c1; font-family: 'Manrope', sans-serif; font-size: clamp(1.2rem, 2vw, 1.7rem); letter-spacing: -.03em; margin-bottom: 1.2rem; }
 .aev-lead { color: #d3d8df; font-size: 1.1rem; line-height: 1.7; max-width: 430px; }
 .aev-details { border-bottom: 1px solid rgba(245, 242, 238, .2); border-top: 1px solid rgba(245, 242, 238, .2); display: grid; gap: 1.5rem; grid-template-columns: repeat(3, 1fr); margin: 2.5rem 0; padding: 1.5rem 0; }
 .aev-details span { color: #aeb8c3; font-size: .75rem; line-height: 1.5; }
@@ -294,8 +296,8 @@ p { line-height: 1.55; }
   .youth-layout { display: block; margin-top: 4rem; }
   .youth-content { margin-top: 3rem; }
   .aev-feature { display: block; margin-top: 4rem; }
-  .aev-art { min-height: 0; }
-  .aev-art img { aspect-ratio: 1.45; }
+  .aev-art { min-height: 0; padding: 1.5rem; }
+  .aev-art img { max-height: none; width: 100%; }
   .aev-copy { padding: 2.5rem 2rem; }
   .aev-details { grid-template-columns: 1fr; }
   .schedule-row { grid-template-columns: 1fr 1fr; }
