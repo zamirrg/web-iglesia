@@ -39,7 +39,7 @@ p { line-height: 1.55; }
 .hero-content { position: relative; z-index: 1; }
 .hero h1 em { font-style: normal; position: relative; }
 .hero h1 em::after { background: var(--ink); bottom: -.08em; content: ''; height: .07em; left: 0; position: absolute; transform: rotate(-2deg); width: 100%; }
-.page-hero h1 em::after { background: var(--ink); bottom: -.06em; content: ''; height: .055em; left: 0; opacity: .8; position: absolute; transform: rotate(-2deg); width: 100%; }
+.page-hero h1 em::after { background: var(--ink); bottom: .02em; content: ''; height: .055em; left: 0; opacity: .8; position: absolute; transform: rotate(-2deg); width: 100%; }
 .hero-copy { font-size: 1.05rem; margin: 3.5rem 0 2.5rem; max-width: 430px; }
 .eyebrow { font-size: .68rem; font-weight: 700; letter-spacing: .18em; margin-bottom: 1.1rem; }
 .accent { color: #aa7a12; }
