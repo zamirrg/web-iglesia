@@ -278,14 +278,18 @@ p { line-height: 1.55; }
 .youth-detail-card-orange { background: var(--orange); }
 .youth-detail-card-purple { background: var(--purple); }
 .aev-feature { background: linear-gradient(125deg, #0b111c, #172c3c 62%, #242033); color: var(--paper); display: grid; grid-template-columns: 1.05fr .95fr; isolation: isolate; margin-top: 6rem; overflow: hidden; position: relative; }
+.aev-feature-compact { border: 1px solid rgba(255,255,255,.14); box-shadow: 0 2rem 5rem rgba(23,21,28,.2); grid-template-columns: .85fr 1.15fr; margin-top: 5rem; }
 .aev-feature::before { animation: aevGlow 10s ease-in-out infinite alternate; background: radial-gradient(circle, rgba(255, 106, 79, .35), transparent 62%); content: ''; filter: blur(12px); height: 34rem; pointer-events: none; position: absolute; right: -9rem; top: -12rem; width: 34rem; z-index: -1; }
 .aev-feature::after { animation: aevGrid 18s linear infinite; background-image: linear-gradient(rgba(255,255,255,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.07) 1px, transparent 1px); background-size: 4rem 4rem; content: ''; inset: 0; mask-image: linear-gradient(120deg, transparent 15%, black 70%); opacity: .35; pointer-events: none; position: absolute; transform: perspective(500px) rotateY(-12deg) scale(1.2); z-index: -1; }
 .aev-feature > * { position: relative; z-index: 1; }
 .aev-art { align-items: center; background: #090f18; display: flex; justify-content: center; min-height: 510px; padding: 2.5rem; }
+.aev-feature-compact .aev-art { background: radial-gradient(circle at 50% 45%, rgba(255,106,79,.28), transparent 55%), #090f18; min-height: 390px; padding: 2rem; }
 .aev-art img { display: block; height: auto; max-height: 100%; max-width: 100%; object-fit: contain; width: auto; }
 .aev-copy { padding: 4.5rem 4rem; }
+.aev-feature-compact .aev-copy { align-self: center; padding: 3.5rem; }
 .aev-pill { background: #ff6a4f; border-radius: 50px; color: #101923; display: inline-block; font-size: .62rem; font-weight: 800; letter-spacing: .12em; margin-top: .5rem; padding: .6rem .8rem; }
 .aev-copy h2 { color: #ff6a4f; font-size: clamp(5rem, 11vw, 10rem); line-height: .8; margin: 2rem 0 .8rem; }
+.aev-feature-compact .aev-copy h2 { font-size: clamp(4.5rem, 8vw, 7rem); margin: 1.5rem 0 .7rem; }
 .aev-meaning { color: #fff0c1; font-family: 'Manrope', sans-serif; font-size: clamp(1.2rem, 2vw, 1.7rem); letter-spacing: -.03em; margin-bottom: 1.2rem; }
 .aev-lead { color: #d3d8df; font-size: 1.1rem; line-height: 1.7; max-width: 430px; }
 .aev-details { border-bottom: 1px solid rgba(245, 242, 238, .2); border-top: 1px solid rgba(245, 242, 238, .2); display: grid; gap: 1.5rem; grid-template-columns: repeat(3, 1fr); margin: 2.5rem 0; padding: 1.5rem 0; }
