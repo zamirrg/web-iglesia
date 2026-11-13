@@ -64,14 +64,14 @@
         </div>
       </div>
       <div class="values-grid">
-        <article class="value-card value-card-image" data-aos="fade-up">
+        <article class="value-card value-card-image value-card-image-one" data-aos="fade-up">
           <span class="card-number">01</span>
           <div>
             <p class="eyebrow">VIVIMOS</p>
             <h3>Con fe<br>y propósito.</h3>
           </div>
         </article>
-        <article class="value-card" data-aos="fade-up" data-aos-delay="100">
+        <article class="value-card value-card-image value-card-image-two" data-aos="fade-up" data-aos-delay="100">
           <span class="card-number">02</span>
           <div>
             <p class="eyebrow accent">CRECEMOS</p>
@@ -153,16 +153,32 @@
     </section>
 
     <section class="location section" id="visitanos">
-      <div class="location-card" data-aos="zoom-in">
-        <div class="location-info">
-          <p class="eyebrow accent">NOS ENCONTRAMOS EN</p>
-          <h2>Ayacucho,<br>Huamanga.</h2>
-          <p>Loza Los Licenciados<br>Puente Enace</p>
-          <a class="button button-dark" href="https://www.google.com/maps/place/Iglesia+Eben+Ezer-+Las+Asambleas+de+Dios+del+Peru/@-13.144741,-74.2279881,19z" target="_blank" rel="noopener">Cómo llegar <span aria-hidden="true">↗</span></a>
-        </div>
-        <div class="map-frame">
-          <iframe title="Mapa de Iglesia Ebenezer en Ayacucho" src="https://www.google.com/maps?q=-13.144741,-74.2279881&z=17&output=embed" loading="lazy"></iframe>
-        </div>
+      <div class="location-heading">
+        <p class="eyebrow accent">NOS ENCONTRAMOS EN</p>
+        <h2>Dos lugares,<br>una misma familia.</h2>
+        <p>Elige la sede más cercana y planifica tu visita en Ayacucho.</p>
+      </div>
+      <div class="location-grid">
+        <article class="location-card" data-aos="fade-up">
+          <div class="location-info">
+            <span class="location-type">SEDE URBANA</span>
+            <h3>Loza Los Licenciados</h3>
+            <p>Puente Enace · Huamanga</p>
+            <a class="button button-dark" href="https://www.google.com/maps/place/Iglesia+Eben+Ezer-+Las+Asambleas+de+Dios+del+Peru/@-13.144741,-74.2279881,19z" target="_blank" rel="noopener">Cómo llegar <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="map-frame">
+            <iframe title="Mapa de la sede urbana de Iglesia Ebenezer" src="https://www.google.com/maps?q=-13.144741,-74.2279881&z=17&output=embed" loading="lazy"></iframe>
+          </div>
+        </article>
+        <article class="location-card location-card-rural" data-aos="fade-up" data-aos-delay="100">
+          <div class="location-info">
+            <span class="location-type">SEDE FUNDO</span>
+            <h3>Fundo Las Lomas</h3>
+            <p>Una sede más alejada, rodeada de comunidad y naturaleza.</p>
+            <a class="button button-dark" href="https://maps.app.goo.gl/zHPUEYQvGwdGubnM7" target="_blank" rel="noopener">Ver ubicación <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="location-photo" role="img" aria-label="Espacio de reunión de Iglesia Ebenezer"></div>
+        </article>
       </div>
     </section>
 
@@ -223,15 +239,15 @@
       </div>
       <div class="resource-grid">
         <a class="resource-card resource-card-purple" href="https://www.instagram.com/jovenescristianosdeebenezer/" target="_blank" rel="noopener" data-aos="fade-up">
-          <span class="resource-icon">✦</span>
+          <span class="resource-icon resource-icon-youth" aria-hidden="true">♡</span>
           <div><p class="eyebrow">JÓVENES</p><h3>Vive tu fe<br>con otros.</h3><span class="text-link dark-link">Conoce más ↗</span></div>
         </a>
         <a class="resource-card resource-card-orange" href="https://www.tiktok.com/@ebenezer.ayacucho" target="_blank" rel="noopener" data-aos="fade-up" data-aos-delay="100">
-          <span class="resource-icon">◒</span>
+          <span class="resource-icon resource-icon-messages" aria-hidden="true">▤</span>
           <div><p class="eyebrow">MENSAJES</p><h3>Una palabra<br>para hoy.</h3><span class="text-link dark-link">Ver contenido ↗</span></div>
         </a>
         <a class="resource-card resource-card-blue" href="https://www.facebook.com/IglesiaEbenEzerAyacuchoLadp" target="_blank" rel="noopener" data-aos="fade-up" data-aos-delay="200">
-          <span class="resource-icon">↗</span>
+          <span class="resource-icon resource-icon-community" aria-hidden="true">⌂</span>
           <div><p class="eyebrow">COMUNIDAD</p><h3>Lo que pasa<br>en casa.</h3><span class="text-link dark-link">Síguenos ↗</span></div>
         </a>
       </div>
@@ -239,11 +255,12 @@
 
     <section class="bible-resource section" id="biblia">
       <div class="bible-resource-inner" data-aos="fade-up">
-        <div>
+        <div class="bible-heading">
           <p class="eyebrow">RECURSO PARA TU CAMINO</p>
           <h2>Lee, escucha y descubre la Palabra.</h2>
         </div>
         <div>
+          <img class="bible-app-icon" src="assets/biblia-youversion.png" alt="Icono de la Biblia App de YouVersion" />
           <p>Descarga la app oficial de YouVersion y disfruta la Biblia Reina-Valera 1960, con planes, lecturas y versiones en audio para acompañar tus plenarias y tu tiempo con Dios.</p>
           <p class="bible-verse">“Lámpara es a mis pies tu palabra, y lumbrera a mi camino.” <strong>Salmos 119:105</strong></p>
           <a class="button button-light" href="https://play.google.com/store/apps/details?id=com.sirma.mobile.bible.android" target="_blank" rel="noopener">Instalar Biblia Reina-Valera <span aria-hidden="true">↗</span></a>
