@@ -399,7 +399,10 @@ p { line-height: 1.55; }
   .belief-heading h3 { margin-top: 1.5rem; }
   .story-card, .detail-ministry-grid article, .youth-detail-card { min-height: 300px; }
   .location-card { display: block; }
+  .location-card { overflow: hidden; }
   .location-grid { gap: 1.5rem; grid-template-columns: 1fr; }
+  .location-card .map-placeholder { background: linear-gradient(180deg, rgba(245,242,238,.98), rgba(169,216,230,.38)); }
+  .location-card-rural .map-placeholder { background: linear-gradient(180deg, rgba(215,236,242,.98), rgba(198,184,255,.42)); }
   .location-info { min-height: 340px; padding: 3rem; }
   .map-placeholder { min-height: 220px; padding: 2rem 3rem; }
   .live-header { align-items: start; flex-direction: column; gap: 2rem; }
