@@ -46,3 +46,11 @@ backToTop.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 updateBackToTop();
+
+document.querySelectorAll('.belief-toggle').forEach((toggle) => {
+  toggle.addEventListener('click', () => {
+    const article = toggle.closest('article');
+    const isOpen = article.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+  });
+});
