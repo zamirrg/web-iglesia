@@ -77,7 +77,8 @@ p { line-height: 1.55; }
 
 .gather { background: var(--ink); color: var(--paper); }
 .gather .section-label { border-color: rgba(255,255,255,.25); }
-.gather-heading > p { color: #aaa6b0; max-width: 350px; }
+.gather-heading { align-self: stretch; display: flex; flex-direction: column; justify-content: center; padding: 3rem 0; }
+.gather-heading > p { color: #aaa6b0; line-height: 1.75; margin-top: 2.5rem; max-width: 470px; }
 .schedule-list { align-self: end; background: rgba(255,255,255,.035); border: 1px solid rgba(255,255,255,.15); padding: 0 1.5rem; }
 .schedule-row { align-items: center; border-bottom: 1px solid rgba(255,255,255,.2); border-left: 2px solid var(--yellow); display: grid; gap: 1rem; grid-template-columns: 1fr 1fr 1.2fr; padding: 1.35rem 1rem; transition: background .25s, padding-left .25s; }
 .schedule-row:last-child { border-bottom: 0; }
@@ -175,8 +176,12 @@ p { line-height: 1.55; }
 .site-footer .brand-name { border-color: rgba(245, 242, 238, .55); }
 .site-footer p { color: #aaa6b0; font-size: .7rem; }
 .communications-credit { align-items: center; display: flex; gap: .75rem; }
-.communications-credit img { background: #fff; border-radius: .35rem; height: 2.6rem; object-fit: contain; padding: .15rem; width: 4.7rem; }
+.communications-credit img { filter: drop-shadow(0 0 .45rem rgba(255,255,255,.12)); height: 2.6rem; object-fit: contain; width: 4.7rem; }
 .communications-credit p { color: #aaa6b0; font-size: .7rem; }
+.whatsapp-link { align-items: center; border: 1px solid #25d366; color: #176b3a; display: inline-flex; font-size: .8rem; font-weight: 700; gap: .5rem; margin-top: 2rem; padding: .85rem 1.25rem; transition: background .25s, color .25s, transform .25s; }
+.whatsapp-link:hover { background: #25d366; color: #fff; transform: translateY(-2px); }
+.footer-whatsapp { color: #6ee59a; font-size: .7rem; font-weight: 700; }
+.footer-whatsapp:hover { color: #25d366; }
 .back-to-top { align-items: center; background: var(--ink); border: 1px solid rgba(245,242,238,.35); border-radius: 50%; bottom: 1.5rem; color: var(--paper); cursor: pointer; display: flex; font-size: 1.2rem; height: 3rem; justify-content: center; opacity: 0; pointer-events: none; position: fixed; right: 1.5rem; transform: translateY(1rem); transition: opacity .25s, transform .25s, background .25s; width: 3rem; z-index: 30; }
 .back-to-top:hover { background: var(--yellow); color: var(--ink); }
 .back-to-top.is-visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
