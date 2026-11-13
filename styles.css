@@ -260,7 +260,7 @@ p { line-height: 1.55; }
 .belief-toggle { align-items: center; appearance: none; background: transparent; border: 0; border-bottom: 1px solid rgba(23,21,28,.2); border-top: 1px solid rgba(23,21,28,.2); color: inherit; cursor: pointer; display: flex; font-family: 'Manrope', sans-serif; font-size: clamp(1.15rem, 1.7vw, 1.4rem); font-weight: 700; justify-content: space-between; line-height: 1.2; margin-top: auto; min-height: 3.5rem; padding: .6rem 0; text-align: left; width: 100%; }
 .belief-toggle span { font-family: 'DM Sans', sans-serif; font-size: 1.6rem; font-weight: 400; margin-left: 1rem; transition: transform .25s ease; }
 .belief-toggle:focus-visible { outline: 2px solid currentColor; outline-offset: .35rem; }
-.belief-list article p { color: var(--muted); font-size: .92rem; line-height: 1.6; max-height: 0; opacity: 0; overflow: hidden; transition: max-height .35s ease, opacity .25s ease; }
+.belief-list article p { color: var(--muted); font-size: .92rem; line-height: 1.6; max-height: 0; opacity: 0; overflow: hidden; transition: max-height .18s ease, opacity .12s ease; }
 .belief-list article.is-open p { max-height: 8rem; opacity: 1; }
 .belief-list article.is-open .belief-toggle span { transform: rotate(45deg); }
 .beliefs-page .belief-list article:nth-child(6) { color: inherit; }
@@ -422,7 +422,7 @@ p { line-height: 1.55; }
   .beliefs-page .belief-list { gap: .75rem; }
   .beliefs-page .belief-list article { min-height: 150px; padding: 1.25rem 1.35rem; }
   .belief-toggle { font-size: 1.15rem; min-height: 3.2rem; }
-  .belief-list article p { font-size: .9rem; }
+  .belief-list article p { font-size: .9rem; transition-duration: .16s; }
   .story-card, .detail-ministry-grid article, .youth-detail-card { min-height: 300px; }
   .location-card { display: block; min-height: 0; overflow: visible; }
   .location-grid { gap: 1.25rem; grid-template-columns: 1fr; }

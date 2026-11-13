@@ -52,7 +52,9 @@ document.querySelectorAll('.belief-toggle').forEach((toggle) => {
   toggle.addEventListener('click', () => {
     if (!touchInteraction.matches) return;
     const article = toggle.closest('article');
+    const description = article.querySelector('p');
     const isOpen = article.classList.toggle('is-open');
     toggle.setAttribute('aria-expanded', String(isOpen));
+    description.style.maxHeight = isOpen ? `${description.scrollHeight}px` : '0px';
   });
 });
