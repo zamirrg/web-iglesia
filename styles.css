@@ -127,6 +127,13 @@ p { line-height: 1.55; }
 .youth-links b { font-size: 1.2rem; }
 
 .resources { background: var(--paper); }
+.bible-resource { background: #dcecf0; }
+.bible-resource-inner { display: grid; gap: 8vw; grid-template-columns: 1.1fr .9fr; }
+.bible-resource h2 { font-size: clamp(2.7rem, 5vw, 5.2rem); max-width: 650px; }
+.bible-resource-inner > div:last-child { max-width: 440px; }
+.bible-resource-inner > div:last-child > p:first-child { color: var(--muted); font-size: 1.05rem; margin-bottom: 1.5rem; }
+.bible-verse { border-left: 2px solid #5b8c99; color: #315964; font-family: 'Manrope', sans-serif; font-size: .95rem; line-height: 1.5; margin-bottom: 2rem; padding-left: 1rem; }
+.bible-verse strong { display: block; font-size: .72rem; letter-spacing: .1em; margin-top: .5rem; text-transform: uppercase; }
 .resources-header { margin-bottom: 4rem; }
 .resources-header > p { align-self: end; max-width: 300px; }
 .resource-grid { display: grid; gap: 1rem; grid-template-columns: repeat(3, 1fr); }
@@ -292,8 +299,12 @@ p { line-height: 1.55; }
 .aev-video-head { align-items: end; display: flex; justify-content: space-between; margin: 5rem 0 3rem; }
 .aev-video-head h2 { color: #fff0c1; }
 .aev-video-head .light-link { color: var(--paper); }
-.video-frame { aspect-ratio: 16 / 9; background: #0b111c; box-shadow: 0 25px 60px rgba(0,0,0,.25); }
-.video-frame iframe { border: 0; height: 100%; width: 100%; }
+.video-frame { aspect-ratio: 16 / 9; background: #0b111c; box-shadow: 0 25px 60px rgba(0,0,0,.25); overflow: hidden; position: relative; }
+.video-frame > img { display: block; height: 100%; object-fit: cover; opacity: .7; width: 100%; }
+.video-frame-overlay { align-items: center; background: linear-gradient(90deg, rgba(11,17,28,.8), transparent); color: var(--paper); display: flex; gap: 1rem; inset: 0; padding: 2rem; position: absolute; }
+.video-play { align-items: center; background: #ff6a4f; border-radius: 50%; color: #101923; display: flex; height: 4.5rem; justify-content: center; padding-left: .2rem; transition: transform .25s, background .25s; width: 4.5rem; }
+.video-play:hover { background: #fff0c1; transform: scale(1.08); }
+.video-frame-overlay span { font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .video-clips { display: grid; gap: 1rem; grid-template-columns: repeat(3, 1fr); margin-top: 1rem; }
 .video-clips a { background: #101a2b; color: var(--paper); display: block; overflow: hidden; }
 .video-clips img { aspect-ratio: 16 / 9; display: block; object-fit: cover; opacity: .8; transition: opacity .25s, transform .4s; width: 100%; }
@@ -327,6 +338,8 @@ p { line-height: 1.55; }
   .scroll-hint { display: none; }
   .section { padding: 5rem 7vw; }
   .welcome-layout, .gather-layout, .resources-header, .giving-layout { display: block; margin: 4rem 0; }
+  .bible-resource-inner { display: block; }
+  .bible-resource-inner > div:last-child { margin-top: 2rem; }
   .ministries-header { display: block; margin: 4rem 0; }
   .ministries-header > p { margin-top: 2rem; }
   .welcome-copy, .resources-header > p, .giving-layout > div:last-child { margin-top: 2rem; }
@@ -349,6 +362,9 @@ p { line-height: 1.55; }
   .youth-layout { display: block; margin-top: 4rem; }
   .youth-content { margin-top: 3rem; }
   .aev-feature { display: block; margin-top: 4rem; }
+  .aev-feature-compact { margin-top: 5rem; }
+  .aev-feature-compact .aev-art { padding: 1rem; }
+  .aev-feature-compact .aev-copy { padding: 2rem 1.5rem; }
   .aev-art { min-height: 0; padding: 1.5rem; }
   .aev-art img { max-height: none; width: 100%; }
   .aev-copy { padding: 2.5rem 2rem; }
