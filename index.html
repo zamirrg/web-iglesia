@@ -18,10 +18,11 @@
       <span class="brand-name">EBENEZER</span>
     </a>
     <nav class="desktop-nav" aria-label="Navegación principal">
-      <a href="#somos">Quiénes somos</a>
+      <a href="nosotros.html">Quiénes somos</a>
       <a href="#horarios">Reúnete</a>
-      <a href="#ministerios">Ministerios</a>
-      <a href="#jovenes">Jóvenes</a>
+      <a href="ministerios.html">Ministerios</a>
+      <a href="jovenes.html">Jóvenes</a>
+      <a href="creencias.html">Creencias</a>
       <a href="#recursos">Recursos</a>
       <a href="#contacto">Contacto</a>
     </nav>
@@ -59,7 +60,7 @@
         </div>
         <div class="welcome-copy" data-aos="fade-up" data-aos-delay="100">
           <p>En Ebenezer hacemos espacio para que cada persona conozca a Jesús, encuentre una comunidad y descubra cómo puede ser parte de lo que Dios está haciendo en Ayacucho.</p>
-          <a class="text-link dark-link" href="#contacto">Conoce nuestra historia <span aria-hidden="true">↗</span></a>
+          <a class="text-link dark-link" href="nosotros.html">Conoce nuestra historia <span aria-hidden="true">↗</span></a>
         </div>
       </div>
       <div class="values-grid">
@@ -148,6 +149,7 @@
           </div>
         </article>
       </div>
+      <a class="button button-outline section-more" href="ministerios.html">Conoce todos nuestros ministerios <span aria-hidden="true">↗</span></a>
     </section>
 
     <section class="location section" id="visitanos">
@@ -187,6 +189,7 @@
           <h2>Creemos en lo que Dios está haciendo en los jóvenes.</h2>
           <p>Un espacio para conversar sin máscaras, adorar con libertad y descubrir juntos cómo seguir a Jesús.</p>
           <a class="button button-light" href="https://www.instagram.com/jovenescristianosdeebenezer/" target="_blank" rel="noopener">Conoce Jóvenes Ebenezer <span aria-hidden="true">↗</span></a>
+          <a class="text-link dark-link page-inline-link" href="jovenes.html">Ver la página de jóvenes <span aria-hidden="true">↗</span></a>
         </div>
         <div class="youth-content" data-aos="fade-left">
           <div class="youth-feature">
@@ -210,7 +213,7 @@
     </section>
 
     <section class="resources section" id="recursos">
-      <div class="section-label">03 / RECURSOS</div>
+      <div class="section-label">05 / RECURSOS</div>
       <div class="resources-header">
         <div>
           <p class="eyebrow accent">PARA TU CAMINO</p>
@@ -269,25 +272,6 @@
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
-  <script>
-    AOS.init({ once: true, offset: 70, duration: 800, easing: 'ease-out-cubic' });
-    const lenis = new Lenis({ duration: 1.2, smoothWheel: true, syncTouch: true });
-    function raf(time) {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
-    const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('.desktop-nav');
-    menuToggle.addEventListener('click', () => {
-      const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
-      menuToggle.setAttribute('aria-expanded', String(!isOpen));
-      nav.classList.toggle('is-open', !isOpen);
-    });
-    nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
-      menuToggle.setAttribute('aria-expanded', 'false');
-      nav.classList.remove('is-open');
-    }));
-  </script>
+  <script src="scripts.js"></script>
 </body>
 </html>

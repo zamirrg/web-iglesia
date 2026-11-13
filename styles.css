@@ -25,6 +25,7 @@ p { line-height: 1.55; }
 .site-header { align-items: center; background: rgba(245, 242, 238, .88); backdrop-filter: blur(16px); display: flex; justify-content: space-between; left: 0; padding: 1.25rem 4.5vw; position: absolute; top: 0; width: 100%; z-index: 20; }
 .brand { align-items: center; display: inline-flex; gap: .7rem; font-family: 'Manrope', sans-serif; font-size: .85rem; font-weight: 800; letter-spacing: .16em; }
 .brand-logo { height: 2.7rem; object-fit: contain; width: 2.7rem; }
+.brand-name { border-left: 1px solid var(--ink); letter-spacing: .13em; line-height: 1; padding-left: .7rem; }
 .brand-mark { align-items: center; background: var(--ink); border-radius: 50%; color: var(--paper); display: inline-flex; font-size: .95rem; height: 2rem; justify-content: center; letter-spacing: 0; width: 2rem; }
 .desktop-nav { display: flex; gap: 2.2rem; margin-left: auto; margin-right: 3rem; }
 .desktop-nav a { font-size: .85rem; font-weight: 700; }
@@ -148,7 +149,76 @@ p { line-height: 1.55; }
 .social-links a { border-bottom: 1px solid var(--ink); font-size: .8rem; font-weight: 700; padding-bottom: .3rem; }
 .site-footer { align-items: center; background: var(--ink); color: var(--paper); display: flex; justify-content: space-between; padding: 2rem 8vw; }
 .site-footer .brand-logo { height: 2.7rem; width: 2.7rem; }
+.site-footer .brand-name { border-color: rgba(245, 242, 238, .55); }
 .site-footer p { color: #aaa6b0; font-size: .7rem; }
+
+.inner-page .site-header { position: relative; }
+.page-hero { min-height: 78vh; overflow: hidden; padding: 15rem 8vw 8rem; position: relative; }
+.page-hero::after { border: 1px solid rgba(23, 21, 28, .18); border-radius: 50%; content: ''; height: 45vw; position: absolute; right: -9vw; top: 10vh; width: 45vw; }
+.page-hero-yellow { background: var(--yellow); }
+.page-hero-purple { background: var(--purple); }
+.page-hero-orange { background: var(--orange); }
+.page-hero-blue { background: var(--blue); }
+.page-hero-inner { position: relative; z-index: 1; }
+.page-hero h1 { font-size: clamp(3.5rem, 8vw, 8rem); max-width: 850px; }
+.page-hero h1 em { font-style: normal; position: relative; }
+.page-hero h1 em::after { background: var(--ink); bottom: -.08em; content: ''; height: .07em; left: 0; position: absolute; transform: rotate(-2deg); width: 100%; }
+.page-hero-inner > p:last-child { font-size: 1.05rem; margin-top: 2rem; max-width: 430px; }
+.content-section { background: var(--paper); }
+.story-intro { max-width: 760px; }
+.story-intro h2 { margin-bottom: 1.8rem; }
+.story-intro > p:last-child { color: var(--muted); font-size: 1.05rem; max-width: 520px; }
+.story-grid { display: grid; gap: 1rem; grid-template-columns: repeat(3, 1fr); margin-top: 6rem; }
+.story-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 350px; padding: 2rem; }
+.story-card > span, .detail-ministry-grid article > span { font-size: .75rem; font-weight: 700; }
+.story-card h3 { font-size: clamp(2rem, 3vw, 3rem); margin-bottom: 1rem; }
+.story-card p { color: var(--muted); max-width: 260px; }
+.story-card-dark { background: var(--ink); color: var(--paper); }
+.story-card-dark p { color: #aaa6b0; }
+.story-card-yellow { background: var(--yellow); }
+.story-card-light { background: var(--cream); }
+.quote-section { background: var(--ink); color: var(--paper); text-align: center; }
+.quote-section blockquote { color: var(--yellow); font-family: 'Manrope', sans-serif; font-size: clamp(2.6rem, 5vw, 5.5rem); letter-spacing: -.06em; line-height: 1; margin: 2rem auto; max-width: 900px; }
+.quote-section cite { color: #aaa6b0; font-size: .8rem; font-style: normal; }
+.page-cta { background: var(--yellow); }
+.page-cta h2 { margin-bottom: 2rem; }
+.page-cta .button { margin-top: 1rem; }
+.belief-block { margin-top: 7rem; }
+.belief-heading { border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; padding-bottom: 1.5rem; }
+.belief-heading h3 { font-size: clamp(2rem, 3.5vw, 3.5rem); }
+.belief-list { display: grid; grid-template-columns: repeat(2, 1fr); }
+.belief-list article { border-bottom: 1px solid var(--line); display: grid; gap: 1rem; grid-template-columns: 2rem 1fr; padding: 2rem 1rem 2rem 0; }
+.belief-list article span { font-size: .7rem; font-weight: 700; }
+.belief-list h4 { font-family: 'Manrope', sans-serif; font-size: 1.4rem; margin-bottom: .6rem; }
+.belief-list p { color: var(--muted); font-size: .95rem; max-width: 390px; }
+.belief-highlight { background: var(--purple); }
+.belief-highlight > div { max-width: 700px; }
+.belief-highlight h2 { margin-bottom: 1.5rem; }
+.belief-highlight p:last-child { font-size: 1.05rem; max-width: 400px; }
+.detail-ministry-grid { display: grid; gap: 1rem; grid-template-columns: repeat(2, 1fr); margin-top: 6rem; }
+.detail-ministry-grid article { background: var(--cream); display: flex; flex-direction: column; min-height: 370px; padding: 2.5rem; }
+.detail-ministry-grid article:nth-child(2) { background: var(--yellow); }
+.detail-ministry-grid article:nth-child(3) { background: var(--blue); }
+.detail-ministry-grid article:nth-child(4) { background: var(--ink); color: var(--paper); }
+.detail-ministry-grid article:nth-child(4) .text-link { color: var(--paper); }
+.detail-ministry-grid h3 { font-size: clamp(2rem, 3.4vw, 3.4rem); margin: auto 0 1rem; }
+.detail-ministry-grid p:not(.text-link) { color: var(--muted); max-width: 390px; }
+.detail-ministry-grid article:nth-child(4) p:not(.text-link) { color: #aaa6b0; }
+.detail-ministry-grid .text-link { align-self: flex-start; margin-top: 1.5rem; }
+.ministry-banner { background: var(--ink); color: var(--paper); }
+.ministry-banner h2 { color: var(--yellow); margin-bottom: 2rem; }
+.youth-detail-grid { display: grid; gap: 1rem; grid-template-columns: repeat(3, 1fr); margin-top: 6rem; }
+.youth-detail-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 420px; padding: 2rem; transition: transform .25s; }
+.youth-detail-card:hover { transform: translateY(-5px); }
+.youth-detail-card > span { font-size: .65rem; font-weight: 700; letter-spacing: .12em; }
+.youth-detail-card h3 { font-size: clamp(2rem, 3vw, 3.2rem); margin-bottom: 2rem; }
+.youth-detail-card strong { font-size: .78rem; }
+.youth-detail-card-dark { background: var(--ink); color: var(--paper); }
+.youth-detail-card-dark h3 { color: var(--yellow); }
+.youth-detail-card-orange { background: var(--orange); }
+.youth-detail-card-purple { background: var(--purple); }
+.section-more { margin-top: 2rem; }
+.page-inline-link { display: inline-flex; margin-top: 1.3rem; }
 
 @media (max-width: 800px) {
   h1 { font-size: clamp(3rem, 14vw, 5rem); }
@@ -172,6 +242,13 @@ p { line-height: 1.55; }
   .value-card, .resource-card { min-height: 320px; }
   .ministry-grid { grid-template-columns: 1fr; }
   .ministry-card-main { grid-row: auto; min-height: 380px; }
+  .page-hero { min-height: 75vh; padding: 10rem 7vw 6rem; }
+  .page-hero h1 { font-size: clamp(3.2rem, 14vw, 5.4rem); }
+  .story-grid, .belief-list, .detail-ministry-grid, .youth-detail-grid { grid-template-columns: 1fr; }
+  .story-grid, .belief-block, .detail-ministry-grid, .youth-detail-grid { margin-top: 4rem; }
+  .belief-heading { display: block; }
+  .belief-heading h3 { margin-top: 1.5rem; }
+  .story-card, .detail-ministry-grid article, .youth-detail-card { min-height: 300px; }
   .location-card { display: block; }
   .location-info { min-height: 420px; padding: 3rem; }
   .map-frame { height: 330px; min-height: 0; }
