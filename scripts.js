@@ -3,7 +3,12 @@ if (window.AOS) {
 }
 
 if (window.Lenis) {
-  const lenis = new Lenis({ duration: 1.2, smoothWheel: true, syncTouch: true });
+  const isTouchDevice = window.matchMedia('(pointer: coarse)').matches;
+  const lenis = new Lenis({
+    duration: isTouchDevice ? 0.85 : 1.2,
+    smoothWheel: !isTouchDevice,
+    syncTouch: false
+  });
   function raf(time) {
     lenis.raf(time);
     requestAnimationFrame(raf);

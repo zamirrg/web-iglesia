@@ -377,38 +377,38 @@ p { line-height: 1.55; }
   .hero { padding: 14rem 7vw 8rem; }
   .hero-note { bottom: 1.5rem; left: 7vw; }
   .scroll-hint { display: none; }
-  .section { padding: 6.5rem 7vw; }
+  .section { padding: 5.5rem 7vw; }
   .section-label { margin-bottom: 1.5rem; }
-  .welcome-layout, .gather-layout, .resources-header, .giving-layout { display: block; margin: 5rem 0 5.5rem; }
+  .welcome-layout, .gather-layout, .resources-header, .giving-layout { display: block; margin: 4rem 0 4.5rem; }
   .bible-resource-inner { display: block; }
   .bible-heading { display: block; }
   .bible-heading .bible-app-icon { margin: 2rem 0; }
   .bible-resource-inner > div:last-child { margin-top: 2rem; }
-  .ministries-header { display: block; margin: 5rem 0 4.5rem; }
+  .ministries-header { display: block; margin: 4rem 0 3.5rem; }
   .ministries-header > p { margin-top: 2.5rem; }
   .welcome-copy, .resources-header > p, .giving-layout > div:last-child { margin-top: 2.5rem; }
-  .values-grid, .resource-grid, .ministry-grid { gap: 1.5rem; grid-template-columns: 1fr; }
-  .value-card, .resource-card { min-height: 350px; padding: 2.25rem; }
-  .ministry-card { padding: 2.25rem; }
-  .ministry-card-main { grid-row: auto; min-height: 420px; }
+  .values-grid, .resource-grid, .ministry-grid { gap: 1.25rem; grid-template-columns: 1fr; }
+  .value-card, .resource-card { min-height: 320px; padding: 2rem; }
+  .ministry-card { padding: 2rem; }
+  .ministry-card-main { grid-row: auto; min-height: 380px; }
   .page-hero { min-height: 75vh; padding: 10rem 7vw 6rem; }
   .page-hero h1 { font-size: clamp(3.2rem, 14vw, 5.4rem); }
   .story-grid, .belief-list, .detail-ministry-grid, .youth-detail-grid { grid-template-columns: 1fr; }
-  .story-grid, .belief-block, .detail-ministry-grid, .youth-detail-grid { margin-top: 5rem; }
+  .story-grid, .belief-block, .detail-ministry-grid, .youth-detail-grid { margin-top: 4rem; }
   .belief-heading { display: block; }
   .belief-heading h3 { margin-top: 1.5rem; }
   .story-card, .detail-ministry-grid article, .youth-detail-card { min-height: 300px; }
   .location-card { display: block; }
   .location-card { overflow: hidden; }
-  .location-grid { gap: 1.5rem; grid-template-columns: 1fr; }
+  .location-grid { gap: 1.25rem; grid-template-columns: 1fr; }
   .location-card .map-placeholder { background: linear-gradient(180deg, rgba(245,242,238,.98), rgba(169,216,230,.38)); }
   .location-card-rural .map-placeholder { background: linear-gradient(180deg, rgba(215,236,242,.98), rgba(198,184,255,.42)); }
   .location-info { min-height: 340px; padding: 3rem; }
   .map-placeholder { min-height: 220px; padding: 2rem 3rem; }
   .live-header { align-items: start; flex-direction: column; gap: 2rem; }
   .live-placeholder { aspect-ratio: 1 / 1; padding: 2rem; }
-  .youth-layout { display: block; margin-top: 5rem; }
-  .youth-content { margin-top: 3.5rem; }
+  .youth-layout { display: block; margin-top: 4rem; }
+  .youth-content { margin-top: 3rem; }
   .aev-feature { display: block; margin-top: 4rem; }
   .aev-feature-compact { margin-top: 5rem; }
   .aev-feature-compact .aev-art { padding: 1rem; }
@@ -421,8 +421,8 @@ p { line-height: 1.55; }
   .aev-hero-logo { margin: 4rem auto 0; max-width: 72vw; }
   .aev-hero-logo::before, .aev-hero-logo::after { height: 72vw; width: 72vw; }
   .aev-hero-logo img { max-width: 100%; }
-  .aev-about-grid { display: block; margin: 5rem 0; }
-  .aev-about-grid > p { margin-top: 2.5rem; }
+  .aev-about-grid { display: block; margin: 4rem 0; }
+  .aev-about-grid > p { margin-top: 2rem; }
   .aev-stats { grid-template-columns: 1fr; }
   .aev-stats div { border-bottom: 1px solid var(--line); }
   .aev-video-head, .aev-gallery-head { align-items: start; flex-direction: column; gap: 2rem; margin: 4rem 0 2rem; }
